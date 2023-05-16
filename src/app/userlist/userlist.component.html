@@ -1,0 +1,28 @@
+<h2 style="text-align:center">userList</h2>
+<div class="card">
+  <div class="card-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>mobile number</th>
+          <th>password</th>
+          <th>user name</th>
+          <th> Actions </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.mobile}}</td>
+          <td>{{user.password}}</td>
+          <td>{{user.role}}</td>
+          <td>
+            <button (click) = "updateUser(user.userId)" class = "btn btn-info"> Update</button>
+            <button (click) = "deleteUser(user.userId)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+           
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>

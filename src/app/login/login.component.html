@@ -1,0 +1,27 @@
+<header>
+  <h1>login</h1>
+</header>
+<body>
+<div  class="card">
+ 
+  <form (ngSubmit)="userLogin()" class="register-form">
+
+    
+
+    <div class="form-outline mb-4">
+      <input type="text" name="mobileNo" class="form-control" placeholder="mobileNo" [(ngModel)]="login.mobileNo" />
+      </div>
+
+
+      <br>
+
+     <div class="form-outline mb-4">
+      <input type="password" name="password" class="form-control" placeholder="Password"[(ngModel)]="login.password" />
+    </div>
+   
+    <br>
+
+    <button class="btn btn-success" type="submit">Submit</button>
+  </form>
+</div>
+</body>
